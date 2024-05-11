@@ -1,0 +1,67 @@
+:root{
+    --pink: #ff0054;
+    --white: #FFFFFF;
+    --blue: #22223b;
+}
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    font-family: helvetica;
+    
+  }
+ p{
+    margin-left: 450px;
+    margin-right: 350px;
+  }
+.lit-theme{
+   --bg: var(--pink);
+   --fontColor: var(--blue);
+   --btnFontColor: var(--white);
+   --btnBg:var(--blue);
+}
+.dark-theme{
+    --bg: var(--blue);
+    --fontColor: var(--pink);
+    --btnFontColor: var(--white);
+   --btnBg: var(--pink);
+ }
+li{
+    list-style: square;
+    font-family: monospace;
+
+}
+
+.btn {
+    position: absolute;
+    top: 425px;
+    left: 630px;
+    bottom: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+
+  @media screen and (max-width: 799px) {
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 3rem;
+    }
+ }
+ @media screen and (min-width: 800px) {
+    .content{
+        justify-content: space-around;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 4rem;
+    }
+ } 
